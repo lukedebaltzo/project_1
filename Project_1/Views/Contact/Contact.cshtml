@@ -1,0 +1,80 @@
+﻿@model Project_1.Models.Contact
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>Contact</h2>
+
+<div>
+    <h4>Contact</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Message)
+        </dd>
+
+    </dl>
+
+    <br />
+    <br />
+    @if (ViewBag.Error != null)
+    {
+        <h2> @ViewBag.Error </h2>
+    }
+    <form method="post"
+          action="Contact">
+        <div class="container">
+            <span class="form-control-static"> Your Email: </span>
+            <input class="form-control"
+                   type="text"
+                   name="receiver" />
+            <br />
+            <span class="form-control-static"> Subject </span>
+            <input class="form-control"
+                   type="text"
+                   name="subject" />
+            <br />
+            <span class="form-control-static"> Message: </span>
+            <input class="form-control"
+                   type="text"
+                   name="message" />
+            <br />
+            <input class="btn btn-primary" type="submit" value="Send" />
+        </div>
+    </form>
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
