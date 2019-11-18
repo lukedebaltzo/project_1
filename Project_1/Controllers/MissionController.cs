@@ -41,16 +41,16 @@ namespace Project_1.Controllers
             lstMission.Add(mission2);
             var mission3 = new Mission();
             mission3.Mission_Code = 3;
-            mission3.Mission_Name = "Fiji Suva Mission";
-            mission3.Name_First_President = "John";
-            mission3.Name_Last_President = "Higgins";
-            mission3.Street_Address = "2-24 Lakeba Street";
-            mission3.State = "Rewa";
-            mission3.Country = "Fiji";
+            mission3.Mission_Name = "Dominican Republic Santo Domingo West Mission";
+            mission3.Name_First_President = "Jim";
+            mission3.Name_Last_President = "Nuckols";
+            mission3.Street_Address = "C/ Hatuey # 73 Urb. Los Cacicazgos";
+            mission3.State = "Santo Domingo";
+            mission3.Country = "Dominican Republic";
             mission3.Zip = "N/A";
-            mission3.Main_Religion = "Methodist";
-            mission3.Language = "Fijian";
-            mission3.Climate = "Temperate";
+            mission3.Main_Religion = "Catholic";
+            mission3.Language = "Dominican Spanish";
+            mission3.Climate = "Hot and Tropical";
             lstMission.Add(mission3);
             ViewBag.Mission = lstMission;
 
