@@ -53,7 +53,7 @@ namespace Project_1.Controllers
             mission3.Climate = "Hot and Tropical";
             lstMission.Add(mission3);
             var mission4 = new Mission();
-            mission4.Mission_Code = 3;
+            mission4.Mission_Code = 4;
             mission4.Mission_Name = "Dominican Republic Santo Domingo West Mission";
             mission4.Name_First_President = "Jim";
             mission4.Name_Last_President = "Nuckols";
