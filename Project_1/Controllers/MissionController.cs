@@ -66,9 +66,12 @@ namespace Project_1.Controllers
             mission4.Climate = "Hot and Tropical";
             lstMission.Add(mission4);
             ViewBag.Mission = lstMission;
+            
+            return View();
+        }
 
-
-
+        public ActionResult FijiFAQ()
+        {
             return View(lstMission);
         }
     }
