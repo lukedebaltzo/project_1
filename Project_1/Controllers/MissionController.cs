@@ -72,7 +72,11 @@ namespace Project_1.Controllers
 
         public ActionResult FijiFAQ()
         {
-            return View(lstMission);
+
+            
+            ViewBag.FijiMission = lstMission.Find(p => p.Mission_Code == 1);
+
+            return View();
         }
     }
 }
