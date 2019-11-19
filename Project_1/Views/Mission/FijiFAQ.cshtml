@@ -7,7 +7,7 @@
 <h2>FijiFAQ</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Go back", "MissionChoices")
 </p>
 <table class="table">
     <tr>
@@ -84,14 +84,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Main_Religion)
             </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
+            
         </tr>
     }
 
 </table>
 
-@ViewBag.FijiMission
+

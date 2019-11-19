@@ -166,6 +166,7 @@
     <Content Include="Views\Mission\FijiFAQ.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\About\AboutUs.cshtml" />
+    <Content Include="Views\Mission\MissionFAQ.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
