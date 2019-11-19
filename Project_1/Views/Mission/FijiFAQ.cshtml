@@ -50,42 +50,46 @@
     @foreach (var item in Model)
 
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mission_Code)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mission_Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name_First_President)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name_Last_President)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Street_Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.State)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Country)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Zip)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Language)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Climate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Main_Religion)
-            </td>
-            
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mission_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mission_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_First_President)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name_Last_President)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Street_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Language)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Climate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Main_Religion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
     }
 
 </table>
