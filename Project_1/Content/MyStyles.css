@@ -1,0 +1,63 @@
+﻿div.AboutUs {
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    border: 1px solid #000000;
+    background-color: #B0CFFF;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.divTable.AboutUs .divTableCell, .divTable.AboutUs .divTableHead {
+    border: 4px solid #01020B;
+    padding: 5px 2px;
+}
+
+.divTable.AboutUs .divTableBody .divTableCell {
+    font-size: 15px;
+}
+
+.divTable.AboutUs .divTableHeading {
+    background: #33A7DD;
+    background: -moz-linear-gradient(top, #66bde5 0%, #47afe0 66%, #33A7DD 100%);
+    background: -webkit-linear-gradient(top, #66bde5 0%, #47afe0 66%, #33A7DD 100%);
+    background: linear-gradient(to bottom, #66bde5 0%, #47afe0 66%, #33A7DD 100%);
+}
+
+    .divTable.AboutUs .divTableHeading .divTableHead {
+        font-size: 23px;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+.AboutUs .tableFootStyle {
+    font-weight: bold;
+}
+
+.divTable {
+    display: table;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+    display: table-cell;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableFoot {
+    display: table-footer-group;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
