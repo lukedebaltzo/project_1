@@ -142,3 +142,13 @@ div.AboutUs {
     height:200px;
     width: 600px;
 }
+
+.divLast {
+    top: 0px;
+    margin: 0px;
+    padding: 0px 2px 2px 3px;
+    border-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-color: White;
+    width: 100%;
+}
