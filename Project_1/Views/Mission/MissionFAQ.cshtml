@@ -1,19 +1,19 @@
 ﻿@model IEnumerable<Project_1.Models.Mission>
 
 @{
-    ViewBag.Title = "FijiFAQ";
+    ViewBag.Title = "MissionFAQ";
 }
 
-<h2>FijiFAQ</h2>
+<h2>MissionFAQ</h2>
 
 <p>
     @Html.ActionLink("Go back", "MissionChoices")
 </p>
 <table class="table">
     <tr>
-        <th>
+        <!--<th>
             @Html.DisplayNameFor(model => model.Mission_Code)
-        </th>
+        </th>-->
         <th>
             @Html.DisplayNameFor(model => model.Mission_Name)
         </th>
@@ -47,13 +47,11 @@
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-
-    {
+@foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Mission_Code)
-        </td>
+        <!--<td>
+           @Html.DisplayFor(modelItem => item.Mission_Code)
+        </td>-->
         <td>
             @Html.DisplayFor(modelItem => item.Mission_Name)
         </td>
@@ -84,14 +82,54 @@
         <td>
             @Html.DisplayFor(modelItem => item.Main_Religion)
         </td>
-        <td>
+        <!--<td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
             @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
             @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
+        </td>-->
     </tr>
-    }
+}
 
 </table>
 
 
+
+<html>
+<body>
+    @{
+
+
+        string question = "";
+        <form method="post" action="">
+            Ask a Question:<br />
+            <input type="text" name="question" value="" /><br /><br />
+
+            <input type="submit" value="Submit" class="submit" />
+        </form>
+       <br /> <br />
+
+        question += Request["Question"];
+        ViewBag.questions += question;
+
+        if (ViewBag.questions != "")
+        {
+            <script>
+                function showButton() {
+                    document.getElementById("replyButton").style.display = block;
+                } 
+            </script>
+        }
+        else
+        {
+
+           
+        }
+            <p>
+                FAQs: <br />
+
+                @ViewBag.questions <button id="replyButton" style="display: none">Reply</button> <br />
+                <button id="testButton" onclick="showButton()" style="display: block">Reply</button><br />
+            </p>
+    }
+</body>
+</html>

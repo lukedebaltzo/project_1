@@ -10,9 +10,12 @@ namespace Project_1.Controllers
     public class MissionController : Controller
     {
         public static List<Mission> lstMission = new List<Mission>();
+        public static int Mission_Code_Count;
         // GET: Mission
         public ActionResult MissionChoices()
         {
+            if (lstMission.Count == 0)
+            {
             var mission1 = new Mission();
             mission1.Mission_Code = 1;
             mission1.Mission_Name = "Fiji Suva Mission";
@@ -28,7 +31,7 @@ namespace Project_1.Controllers
             lstMission.Add(mission1);
             var mission2 = new Mission();
             mission2.Mission_Code = 2;
-            mission2.Mission_Name = "Rosario,  Argentina";
+            mission2.Mission_Name = "Argentina Rosario Mission";
             mission2.Name_First_President = "Nicholas";
             mission2.Name_Last_President = "Zanni";
             mission2.Street_Address = "37 yawtah";
@@ -66,17 +69,51 @@ namespace Project_1.Controllers
             mission4.Climate = "Hot and Tropical";
             lstMission.Add(mission4);
             ViewBag.Mission = lstMission;
-            
+            }
             return View();
         }
 
+        public ActionResult MissionFAQ()
+        {
+            return View(lstMission.Where(x => x.Mission_Code == Mission_Code_Count));
+        }
+
+      
+
+
+
+
+
         public ActionResult FijiFAQ()
         {
+            //ViewBag.FijiMission = lstMission.Find(p => p.Mission_Code == 1);
+            Mission_Code_Count = 1;
 
-            
-            ViewBag.FijiMission = lstMission.Find(p => p.Mission_Code == 1);
+            return RedirectToAction("MissionFAQ");
+        }
 
-            return View();
+        public ActionResult ArgentinaFAQ()
+        {
+            //ViewBag.FijiMission = lstMission.Find(p => p.Mission_Code == 1);
+            Mission_Code_Count = 2;
+
+            return RedirectToAction("MissionFAQ");
+        }
+
+        public ActionResult DominicanRepublicFAQ()
+        {
+            //ViewBag.FijiMission = lstMission.Find(p => p.Mission_Code == 1);
+            Mission_Code_Count = 3;
+
+            return RedirectToAction("MissionFAQ");
+        }
+
+        public ActionResult PortugalFAQ()
+        {
+            //ViewBag.FijiMission = lstMission.Find(p => p.Mission_Code == 1);
+            Mission_Code_Count = 4;
+
+            return RedirectToAction("MissionFAQ");
         }
     }
 }
