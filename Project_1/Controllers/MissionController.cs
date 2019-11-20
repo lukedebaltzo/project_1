@@ -14,6 +14,8 @@ namespace Project_1.Controllers
         // GET: Mission
         public ActionResult MissionChoices()
         {
+            if (lstMission.Count == 0)
+            {
             var mission1 = new Mission();
             mission1.Mission_Code = 1;
             mission1.Mission_Name = "Fiji Suva Mission";
@@ -67,7 +69,7 @@ namespace Project_1.Controllers
             mission4.Climate = "Hot and Tropical";
             lstMission.Add(mission4);
             ViewBag.Mission = lstMission;
-            
+            }
             return View();
         }
 
@@ -75,6 +77,12 @@ namespace Project_1.Controllers
         {
             return View(lstMission.Where(x => x.Mission_Code == Mission_Code_Count));
         }
+
+      
+
+
+
+
 
         public ActionResult FijiFAQ()
         {

@@ -91,3 +91,45 @@
 }
 
 </table>
+
+
+
+<html>
+<body>
+    @{
+
+
+        string question = "";
+        <form method="post" action="">
+            Ask a Question:<br />
+            <input type="text" name="question" value="" /><br /><br />
+
+            <input type="submit" value="Submit" class="submit" />
+        </form>
+       <br /> <br />
+
+        question += Request["Question"];
+        ViewBag.questions += question;
+
+        if (ViewBag.questions != "")
+        {
+            <script>
+                function showButton() {
+                    document.getElementById("replyButton").style.display = block;
+                } 
+            </script>
+        }
+        else
+        {
+
+           
+        }
+            <p>
+                FAQs: <br />
+
+                @ViewBag.questions <button id="replyButton" style="display: none">Reply</button> <br />
+                <button id="testButton" onclick="showButton()" style="display: block">Reply</button><br />
+            </p>
+    }
+</body>
+</html>
