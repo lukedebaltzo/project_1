@@ -49,8 +49,7 @@
             @Html.ValidationMessageFor(model => model.User_Email, "", new { @class = "text-danger" })
         </div>
     </div>
-    <br />
-    <br />
+
     <div class="form-group-static">
         @Html.LabelFor(model => model.Subject_Code, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
@@ -58,7 +57,6 @@
             @Html.ValidationMessageFor(model => model.Subject_Code, "", new { @class = "text-danger" })
         </div>
     </div>
-    <br />
 
     <div class="form-group-static">
         @Html.LabelFor(model => model.User_Message, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -67,8 +65,7 @@
             @Html.ValidationMessageFor(model => model.User_Message, "", new { @class = "text-danger" })
         </div>
     </div>
-    <br />
-    <br />
+
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Submit" class="btn btn-default" method="post" />
