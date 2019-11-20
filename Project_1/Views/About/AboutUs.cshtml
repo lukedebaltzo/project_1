@@ -3,30 +3,77 @@
     ViewBag.Title = "AboutUs";
 }
 
-<div style="border-bottom-style:solid">
-    <h2 class="text-center">Dear Returned Missionary</h2>
-    <div class="text-center">
-        This site was established by 4 returned missionaries. The purpose of this site is to help recently-called missionaries to connect with returned missionaries. We hope that you will use this resource to prepare you for your mission by asking questions to the missionaries who have served in your areas before you. If you feel so inclined to, you are invited to return after your missions and help other missionaries prepare!
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+</style>
+<body>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="~/Content/Photos/meet-missionaries-sidebar.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">Our Story</h1><br>
+                <h5 class="w3-center">Established 2019</h5>
+                <p class="w3-large">This site was established by 4 returned missionaries. The purpose of this site is to help recently-called missionaries to connect with returned missionaries. We hope that you will use this resource to prepare you for your mission by asking questions to the missionaries who have served in your areas before you. If you feel so inclined to, you are invited to return after your missions and help other missionaries prepare! </p>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Our Mission</h1><br>
+                <p class="w3-large">"Dear Future Missionary" is a variation of the "Dear Elder" company that advocates for more meaningful communication between missionaries and their friends and family. With the recent change to allow missionaries to call, skype, and text their families weekly, we can tell how important communication is for missionaries. Practice spreading messages now by sharing this site with your friends who will serve or have served. Thanks!</p>
+
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <img src="~/Content/Photos/missionary tag.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- End page content -->
     </div>
-    <br />
-</div>
-<br />
-<div class="text-center">
-    <img class="text-center" src="~/Content/Photos/missionary tag.jpg" />
-</div>
-<br />
 
-<div style="border-bottom-style:solid" class="text-center">
-    GOOD LUCK! Wherever you're going, we know you'll be great!   
-    <div><br /></div>
-</div>
-<br />
+    <!-- Footer -->
+    <div class="divTableFoot tableFootStyle">
+        <div class="divTableRow">
+            <div class="divTableCell">
+                @Html.ActionLink("Back to Home", "Index", "Home")
+                |
+                @Html.ActionLink("Missions", "MissionChoices", "Mission")
+                |
+                @Html.ActionLink("Contact", "Contact", "Contact")
 
-<div style="border-bottom-style:solid" class="text-center">
-    "Dear Future Missionary" is a variation of the "Dear Elder" company that advocates for more meaningful communication between missionaries and their friends and family. With the recent change to allow missionaries to call, skype, and text their families weekly, we can tell how important communication is for missionaries. Practice spreading messages now by sharing this site with your friends who will serve or have served. Thanks!    
-    <div><br /></div>
-</div>
-<br />
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
 <!--
 
 <div class="divTable AboutUs">
@@ -51,19 +98,7 @@
             <div class="divTableCell">"Dear Future Missionary" is a variation of the "Dear Elder" company that advocates for more meaningful communication between missionaries and their friends and family. With the recent change to allow missionaries to call, skype, and text their families weekly, we can tell how important communication is for missionaries. Practice spreading messages now by sharing this site with your friends who will serve or have served. Thanks! </div>
         </div>
     </div>-->
-<div class="divTableFoot tableFootStyle">
-    <div class="divTableRow">
-        <div class="divTableCell">
-            @Html.ActionLink("Back to Home", "Index", "Home")
-            |
-            @Html.ActionLink("Missions", "MissionChoices", "Mission")
-            |
-            @Html.ActionLink("Contact", "Contact", "Contact")
 
-
-        </div>
-    </div>
-</div>
 
 
 
