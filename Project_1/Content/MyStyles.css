@@ -4,7 +4,7 @@
     color: white
 }
 .jumbotron {
-    background-color: #eef3f3;
+    background-color: #004080;
     opacity: .9;
     border: double;
     border-color: black;
@@ -21,14 +21,13 @@
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid #84aba6;
+    border: 2px solid #cadeff;
     width: 250px;
-    opacity: initial;
+    opacity:initial;
 }
     .jumbotronButton:hover {
-        background-color: #84aba6;
+        background-color: #cadeff;
         text-decoration: none;
-        color: white;
     }
 
 div.AboutUs {
@@ -97,18 +96,17 @@ div.AboutUs {
 
 
 .dropbtn {
-    background-color: white ;
-    color: black;
+    background-color: #3498DB;
+    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
-    .dropbtn:hover, .dropbtn:focus {
-        background-color: #eef3f3;
-        color: black;
-    }
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
 
 .dropdown {
     position: relative;
@@ -145,19 +143,12 @@ div.AboutUs {
     width: 600px;
 }
 
-footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 30px;
+.divLast {
+    top: 0px;
+    margin: 0px;
+    padding: 0px 2px 2px 3px;
+    border-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-color: White;
     width: 100%;
-    text-align: center;
-
-}
-
-h2 {
-    color: black;
-}
-h4 {
-    color: black;
 }

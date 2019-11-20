@@ -57,16 +57,16 @@ namespace Project_1.Controllers
             lstMission.Add(mission3);
             var mission4 = new Mission();
             mission4.Mission_Code = 4;
-            mission4.Mission_Name = "Dominican Republic Santo Domingo West Mission";
-            mission4.Name_First_President = "Jim";
-            mission4.Name_Last_President = "Nuckols";
-            mission4.Street_Address = "C/ Hatuey # 73 Urb. Los Cacicazgos";
-            mission4.State = "Santo Domingo";
-            mission4.Country = "Dominican Republic";
-            mission4.Zip = "N/A";
+            mission4.Mission_Name = "Portugal Porto Mission";
+            mission4.Name_First_President = "Manoel";
+            mission4.Name_Last_President = "Amorim";
+            mission4.Street_Address = "Rua de Amália Luazes Nº 23 Sala I";
+            mission4.State = "Porto";
+            mission4.Country = "Portugal";
+            mission4.Zip = "4200-052";
             mission4.Main_Religion = "Catholic";
-            mission4.Language = "Dominican Spanish";
-            mission4.Climate = "Hot and Tropical";
+            mission4.Language = "Portuguese";
+            mission4.Climate = "Moderate temperatures. Very rainy winter season.";
             lstMission.Add(mission4);
             ViewBag.Mission = lstMission;
             }
