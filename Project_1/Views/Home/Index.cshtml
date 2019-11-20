@@ -4,11 +4,12 @@
 }
 
 <div class="jumbotron">
-    @Html.ActionLink("Missions", "MissionChoices", "Mission")
+   
+    <a href="@Url.Action("MissionChoices", "Mission")" class="jumbotronButton">Missions</a>
     <br />
-    @Html.ActionLink("About Us", "AboutUs", "About")
+    <a href="@Url.Action("AboutUs", "About")" class="jumbotronButton">About Us</a>
     <br />
-    @Html.ActionLink("Contact", "Contact", "Contact")
+    <a href="@Url.Action("Contact", "Contact")" class="jumbotronButton">Contact</a>
 
 </div>
 

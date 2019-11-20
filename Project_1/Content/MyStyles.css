@@ -1,4 +1,37 @@
-﻿div.AboutUs {
+﻿body {
+    
+    background-image: url('Photos/globe.jpg');
+    background-size: cover;
+    color:white
+}
+.jumbotron {
+    background-color: #004080;
+    opacity: .9;
+    border: double;
+    border-color: black;
+}
+.jumbotronButton {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #cadeff;
+    width: 250px;
+    opacity:initial;
+}
+    .jumbotronButton:hover {
+        background-color: #cadeff;
+        text-decoration: none;
+    }
+
+div.AboutUs {
     font-family: "Trebuchet MS",Helvetica,sans-serif;
     border: 1px solid #000000;
     background-color: #B0CFFF;
