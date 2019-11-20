@@ -1,58 +1,12 @@
 @model Project_1.Models.Mission
-
+<link rel="stylesheet" type="text/css" href="~/Content/MyStyles.css" media="screen" />
 @{
     ViewBag.Title = "MissionChoices";
 }
 
 <h2>Mission Choices</h2>
 
-<style>
-    .dropbtn {
-        background-color: #3498DB;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-        .dropbtn:hover, .dropbtn:focus {
-            background-color: #2980B9;
-        }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-    .dropdown a:hover {
-        background-color: #ddd;
-    }
-
-    .show {
-        display: block;
-    }
-</style>
-
-
-<h2>Clickable Dropdown</h2>
+<!--<h2>Clickable Dropdown</h2>-->
 <p>Click on the button to open the dropdown menu.</p>
 
 <div class="dropdown">
@@ -63,6 +17,12 @@
         <a href="@Url.Action("DominicanRepublicFAQ", "Mission")">Dominican Republic Santo Domingo West</a>
         <a href="@Url.Action("PortugalFAQ", "Mission")">Lisbon Portugal</a>
     </div>
+</div>
+<h1></h1>
+<div>
+    @Html.ActionLink("Back to Home", "Index", "Home") |
+    @Html.ActionLink("Contact", "Contact", "Contact") |
+    @Html.ActionLink("About Us", "AboutUs", "About")
 </div>
 
 <script>
