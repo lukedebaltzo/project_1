@@ -22,6 +22,7 @@ namespace Project_1.Controllers
             mission1.Name_First_President = "John";
             mission1.Name_Last_President = "Higgins";
             mission1.Street_Address = "2-24 Lakeba Street";
+            mission1.City = "Suva";
             mission1.State = "Rewa";
             mission1.Country = "Fiji";
             mission1.Zip = "N/A";
@@ -35,6 +36,7 @@ namespace Project_1.Controllers
             mission2.Name_First_President = "Nicholas";
             mission2.Name_Last_President = "Zanni";
             mission2.Street_Address = "37 yawtah";
+            mission2.City = "Chicharones";
             mission2.State = "Rosario";
             mission2.Country = "Argentina";
             mission2.Zip = "2000";
@@ -47,7 +49,8 @@ namespace Project_1.Controllers
             mission3.Mission_Name = "Dominican Republic Santo Domingo West Mission";
             mission3.Name_First_President = "Jim";
             mission3.Name_Last_President = "Nuckols";
-            mission3.Street_Address = "C/ Hatuey # 73 Urb. Los Cacicazgos";
+            mission3.Street_Address = "C/ Hatuey # 73";
+            mission3.City = "Urb. Los Cacicazgos";
             mission3.State = "Santo Domingo";
             mission3.Country = "Dominican Republic";
             mission3.Zip = "N/A";
@@ -61,7 +64,8 @@ namespace Project_1.Controllers
             mission4.Name_First_President = "Manoel";
             mission4.Name_Last_President = "Amorim";
             mission4.Street_Address = "Rua de Amália Luazes Nº 23 Sala I";
-            mission4.State = "Porto";
+            mission4.City = "Porto";
+            mission4.State = "N/A";
             mission4.Country = "Portugal";
             mission4.Zip = "4200-052";
             mission4.Main_Religion = "Catholic";

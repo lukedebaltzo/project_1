@@ -24,6 +24,9 @@ namespace Project_1.Models
         [Display(Name = "Street Address")]
         public string Street_Address { get; set; }
         [Required]
+        [Display(Name = "City")]
+        public string City { get; set; }
+        [Required]
         [Display(Name = "State")]
         public string State { get; set; }
         [Required]
