@@ -136,9 +136,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Mission\MissionChoices.cshtml" />
     <Content Include="Views\Mission\FijiFAQ.cshtml" />
-    <Content Include="Views\Contact\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
