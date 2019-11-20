@@ -41,7 +41,7 @@
         </div>
     </div>
     <br />
-
+    <br />
     <div class="form-control-static">
         @Html.LabelFor(model => model.User_Email, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
@@ -53,7 +53,7 @@
     <div class="form-group-static">
         @Html.LabelFor(model => model.Subject_Code, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.DropDownListFor(model => model.Subject_Code, new SelectList(ViewBag.Subject, "Subject_Code", "Subject_Desc"))
+            @Html.DropDownListFor(model => model.Subject_Code, new SelectList(ViewBag.Subject, "Subject_Code", "Subject_Desc"), new { @class = "form-control" })
             @Html.ValidationMessageFor(model => model.Subject_Code, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -68,7 +68,7 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Submit" class="btn btn-default" method="post" />
+            <input type="submit" value="Submit" class="dropbtn" method="post" />
         </div>
     </div>
 </div>
@@ -78,5 +78,7 @@
 
 
 <div>
-    @Html.ActionLink("Back to Home", "Index", "Home")
+    @Html.ActionLink("Back to Home", "Index", "Home") |
+    @Html.ActionLink("Missions", "MissionChoices", "Mission") |
+    @Html.ActionLink("About Us", "AboutUs", "About")
 </div>

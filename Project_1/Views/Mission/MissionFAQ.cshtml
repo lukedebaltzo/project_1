@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Project_1.Models.Mission>
-
+<link href="~/Content/MyStyles.css" rel="stylesheet" />
 @{
     ViewBag.Title = "MissionFAQ";
 }
@@ -98,38 +98,48 @@
 <body>
     @{
 
-
+    
         string question = "";
         <form method="post" action="">
-            Ask a Question:<br />
-            <input type="text" name="question" value="" /><br /><br />
+            <h4>Have a question?</h4>
+            <textarea cols="75" rows="4" type="text" name="question" value="" class="input-lg"></textarea><br /><br />
 
-            <input type="submit" value="Submit" class="submit" />
+            <input type="submit" value="Submit" class="dropbtn" />
         </form>
-       <br /> <br />
+        <br /> <br />
 
-        question += Request["Question"];
+        question += Request.Form["Question"];
         ViewBag.questions += question;
 
         if (ViewBag.questions != "")
         {
-            <script>
-                function showButton() {
-                    document.getElementById("replyButton").style.display = block;
-                } 
-            </script>
+        <p>
+            <h4>
+                FAQs: <br /><br />
+
+                @ViewBag.questions <br />
+            </h4>
+            <input type="text" name="answer" value="" class="input-lg" /> <br /><br />
+            <button id="replyButton" class="dropbtn" style="display: block">Reply</button> <br />
+            <!--<button id="testButton" onclick="showButton()" style="display: block">Reply</button><br />-->
+        </p>
         }
         else
         {
+        <script>
+            function showButton() {
+                document.getElementById("replyButton").style.display = block;
+            }
+        </script>
 
-           
         }
-            <p>
-                FAQs: <br />
-
-                @ViewBag.questions <button id="replyButton" style="display: none">Reply</button> <br />
-                <button id="testButton" onclick="showButton()" style="display: block">Reply</button><br />
-            </p>
+    
     }
 </body>
 </html>
+<div>
+    @Html.ActionLink("Back to Home", "Index", "Home") |
+    @Html.ActionLink("Choose Missions", "MissionChoices", "Mission") |
+    @Html.ActionLink("Contact", "Contact", "Contact") |
+    @Html.ActionLink("About Us", "AboutUs", "About")
+</div>
