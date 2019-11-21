@@ -168,8 +168,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Mission\MissionChoices.cshtml" />
-    <Content Include="Views\Mission\FijiFAQ.cshtml" />
-    <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\About\AboutUs.cshtml" />
     <Content Include="Views\Mission\MissionFAQ.cshtml" />
     <None Include="Web.Debug.config">
